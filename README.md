@@ -27,7 +27,7 @@ Adicione aqui algumas imagens ou GIFs que mostrem como o site funciona.
 Clone o repositório:
 bash
 Copiar código
-git clone https://github.com/seu-usuario/nome-do-repo.git
+git clone https://github.com/leomatth/YgorAzevedoNutri
 Navegue até o diretório do projeto:
 bash
 Copiar código
