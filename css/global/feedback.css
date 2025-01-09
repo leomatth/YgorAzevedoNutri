@@ -1,0 +1,68 @@
+.feedbacks {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin-top: -120px;
+  }
+
+.feedback-title h2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+  
+  .swiper {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .feedback-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .feedback-text {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    max-width: fit-content;
+  }
+  
+  .feedback-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .feedback-author img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .feedback-author span {
+    font-weight: bold;
+  }
+  
+  .swiper-pagination {
+    text-align: center;
+    transform: translate(0, 0, 0);
+    z-index: 10;
+    width: 100%;
+  }
+  
