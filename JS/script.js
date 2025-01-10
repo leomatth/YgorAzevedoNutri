@@ -13,7 +13,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  slidesPerView: 1, // Mostra apenas um slide por vez
-  spaceBetween: 30, // Espaço entre os slides
+  slidesPerView: 2, // Mostra apenas um slide por vez
+  spaceBetween: 50, // Espaço entre os slides
 }
 );

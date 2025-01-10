@@ -11,17 +11,18 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-top: -15vh;
 }
   
   .swiper {
     width: 80%;
-    height: 80%;
+    height: 80%
   }
   
   .swiper-slide {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     text-align: center;
   }
   
@@ -33,6 +34,11 @@
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    height: auto;
   }
   
   .feedback-text {
