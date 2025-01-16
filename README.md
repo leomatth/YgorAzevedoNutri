@@ -17,22 +17,10 @@ buscar novos clientes e ingressar em novas áreas de atuação como atendimento 
 🛠️ Tecnologias Utilizadas
 HTML5
 CSS3
+BootsTrap 5
 JavaScript
 
 
-🖼️ Demonstração
-Adicione aqui algumas imagens ou GIFs que mostrem como o site funciona.
-
-📝 Como Usar
-Clone o repositório:
-bash
-Copiar código
-git clone https://github.com/leomatth/YgorAzevedoNutri
-Navegue até o diretório do projeto:
-bash
-Copiar código
-cd nome-do-repo
-Abra o arquivo index.html em seu navegador ou configure um servidor local.
 
 🤝 Contribuições
 Contribuições são sempre bem-vindas! Siga os passos abaixo para contribuir:
@@ -56,6 +44,9 @@ Abra um pull request.
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais informações.
 
 📬 Contato
-Seu Nome
+
+Leonardo Mattheus dos Santos Pereira
+
 📧 Email: leomattheus95@gmail.com
+
 🌐 LinkedIn: https://www.linkedin.com/in/leonardo-mattheus-475578226/
