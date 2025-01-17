@@ -15,7 +15,7 @@
 }
 
 .swiper {
-  width: 80%;
+  width: 90%;
   height: 120%
 }
 
@@ -79,6 +79,7 @@
   margin: auto;
   max-width: fit-content;
   width: 900px;  
+  
 }
 
 
@@ -86,22 +87,28 @@
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-size: 18px;
-  color: #4A4A4A;
+  color: var(--cor-11);
   line-height: 1.6;
 }
 
 
 .feedback-author {
-  font-family: 'Lora', serif;
-  font-weight: bold;
-  font-size: 20px;
-  color: #333333;
-  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #4A4A4A;
+  line-height: 1.6;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-content: center;
 }
+
 .feedback-author span {
+  margin-top: 0.5rem;
+}
+
+.feedback-author p {
  margin-top: 0.5rem;
 }
 

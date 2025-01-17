@@ -12,3 +12,6 @@
 /* Home */
 @import "./global/introducao.css";
 @import "./global/feedback.css";
+@import "./acOnline/acOnline.css";
+@import "./acOnline/wallpaper.css";
+@import "./acOnline/evo.css";

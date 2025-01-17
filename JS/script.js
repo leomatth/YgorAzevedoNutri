@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+var swiper = new Swiper('.swiper', {
   cssMode: true,
   keyboard: true,
   loop: true,
@@ -10,10 +10,11 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
   pagination: {
+    type: 'bullets',
     el: '.swiper-pagination',
     clickable: true,
   },
-  slidesPerView: 2, // Mostra apenas um slide por vez
+  slidesPerView: 3, // Mostra apenas um slide por vez
   spaceBetween: 50, // Espaço entre os slides
 }
 );
