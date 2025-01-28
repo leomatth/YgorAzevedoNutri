@@ -1,34 +1,39 @@
-
 .wallpaper {
-    border-radius: 0;
-    margin-top: -10rem;
- }
- 
- .first-text h2 {
-     position: absolute;
-     top: 5rem;
-     left: 60rem;
-     text-align: start;
-     width: 31.25rem;
- }
- 
- .detail {
-     display: inline-block;
-     position: relative;
-     letter-spacing: 2px;
-   }
-   
-   .detail:after {
-     content: "";
-     display: block;
-     height: 2px;
-     width: 0px;
-     background: var(--cor-p1);
-     margin-top: 4px;
-     transition: 0.3s;
-     position: absolute;
-   }
-   
-   .detail:hover:after {
-     width: 100%;
-   }
+  border-radius: 0;
+  margin-top: -10rem;
+}
+
+.first-text h2 {
+  position: absolute;
+  top: 5rem;
+  left: 60rem;
+  text-align: start;
+  width: 31.25rem;
+}
+
+.first-section a {
+  position: absolute;
+  right: 15.5rem;
+  top: 37rem;
+}
+
+.detail {
+  display: inline-block;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.detail:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--cor-p1);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.detail:hover:after {
+  width: 100%;
+}

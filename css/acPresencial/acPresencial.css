@@ -170,3 +170,42 @@ img[src$=".jpg"] {
     margin-right: 20px; /* Espaço entre o ícone e o texto */
   }
   
+  .introducao-bg-acp {
+    background: var(--cor-12);
+    height: 37.5rem;
+  }
+  
+  .introducao-acp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+  }
+  .introducao-acp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .introducao-conteudo-acp {
+    height: 50vh;
+  }
+
+  .plano-1 .ac{
+    margin-top: -3rem;
+  }
+
+  .partes {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 190vw;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
+
+  }
+
+  .detail2 {
+    background-color: var(--cor-p1);
+    border-radius: 15px;
+  }
