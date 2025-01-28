@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper', {
+let swiper = new Swiper('.swiper', {
   cssMode: true,
   keyboard: true,
   loop: true,
