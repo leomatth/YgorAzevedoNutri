@@ -4,16 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Contato | Bikcraft</title>
-  <meta name="description" content="Contato.">
-
-  <link rel="preload" href="./css/style.css" as="style">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <meta name="description"
+    content="Nutrição individualizada, atendimento especial e dedicado para cada situação, se alimentar de forma saborosa e prática.">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image/png" href="./img/ygoraz_logo.png">
+  <title> Ygor Azevedo - Nutrição sob medida</title>
+
+
+
+
 </head>
 
-<body id="contato">
-  <header class="header-bg">
+<body>
+  <header class="header-bg sticky-top">
     <div class="header container">
       <a href="./">
         <img src="./img/ygoraz_logo.png" width="90" height="100" alt="YgorLogo">
@@ -21,9 +30,8 @@
 
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
-          <li><a href="./index.html">Início</a></li>
-          <li><a href="./acOnline.html">Acompanhamento online</a></li>
           <li><a href="./acPresencial.html">Acompanhamento Presencial</a></li>
+          <li><a href="./acOnline.html">Acompanhamento online</a></li>
           <li><a href="./contato.html">Contato</a></li>
           <li><a href="./termos.html">Termos</a></li>
         </ul>
@@ -34,98 +42,101 @@
   <main>
     <div class="titulo-bg">
       <div class="titulo container">
-        <p class="font-2-l-b cor-5">Respostas em até 24h</p>
-        <h1 class="font-1-xxl cor-0">nosso contato<span class="cor-p1">.</span></h1>
+        <p class="font-2-l-b cor-10">Respostas em até 24h</p>
+        <h1 class="font-1-xxl cor-10">nosso contato<span class="cor-p1">.</span></h1>
       </div>
     </div>
 
     <div class="contato container">
       <section class="contato-dados" aria-label="Endereço">
-        <h2 class="font-1-m cor-0">Loja Online</h2>
+        <h2 class="font-1-m cor-0">Escritório Online</h2>
         <div class="contato-endereco font-2-s cor-4">
-          <p>Rua Ali Perto, 35</p>
-          <p>Rio de Janeiro - RJ</p>
-          <p>Brasil - Terra - Vita Láctea</p>
+          <p>Av. Dom Hélder Câmara, Nº 6644</p>
+          <p>Sala 822, 11º andar</p>
+          <p>Pilares - Centro Comercial DHC Offices</p>
         </div>
         <address class="contato-meios font-2-s cor-4">
-          <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
-          <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
-          <a href="tel:+552199999999">+55 21 9999-9999</a>
+          <a href="mailto:ygorazevedonutri@gmail.com">ygorazevedonutri@gmail.com</a>
+          <a href="mailto:contato@ygorazevedonutri.com.br">contato@ygorazevedonutri.com.br</a>
+          <a href="tel:+5521968429200">+55 (21) 96842-9200</a>
         </address>
         <div class="contato-redes">
-          <a href="./">
-            <img src="./img/redes/instagram-p.svg" alt="Instagram">
+          <a href="https://www.instagram.com/ygoraz/">
+            <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
           </a>
-          <a href="./">
-            <img src="./img/redes/facebook-p.svg" alt="Facebook">
+          <a href="https://www.facebook.com/ygor.azevedo.98">
+            <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
           </a>
-          <a href="./">
-            <img src="./img/redes/youtube-p.svg" alt="Youtube">
+          <a
+            href="https://api.whatsapp.com/send?phone=+5521968429200&text=Olá, Ygor. Gostaria de garantir meu acompanhamento.">
+            <img src="./img/icones/wpp.svg" width="34" height="34" alt="Whatsapp">
           </a>
         </div>
       </section>
       <section class="contato-formulario" aria-label="Formulário">
-        <form class="form" action="./contato.html">
+        <form class="form" id="contato-form" action="https://formspree.io/f/mpwqrapy" method="POST">
           <div>
             <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
           </div>
           <div>
             <label for="telefone">Telefone</label>
             <input type="text" id="telefone" name="telefone" placeholder="(21) 9999-9999">
           </div>
-          <div class="col-2">
+          <div>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="contato@email.com">
+            <input type="email" id="email" name="email" placeholder="contato@email.com" required>
           </div>
-          <div class="col-2">
+          <div>
             <label for="mensagem">Mensagem</label>
-            <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+            <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?" required></textarea>
           </div>
-          <button class="botao col-2">Enviar Mensagem</button>
+          <button class="botao col-2" type="submit">Enviar Mensagem</button>
         </form>
-      </section>
+      </section>      
     </div>
   </main>
 
-  <article class="lojas container">
-    <h2 class="font-1-xxl">lojas locais<span class="cor-p1">.</span></h2>
+  <article class="lojas">
+    <h2 class="font-1-xxl cor-0 container">Escritórios locais<span class="cor-p1">.</span></h2>
     <div class="lojas-item">
-      <img src="./img/lojas/rj.jpg" alt="mapa marcando o endereço em Rua Ali Perto, 25 - Rio de Janeiro - RJ">
+      <img src="./img/contato/pilares.png" width="600"
+        alt="mapa marcando o endereço em Av. Dom Hélder Câmara 6644, Sala 822, 11º andar - Rio de Janeiro - RJ">
       <div class="lojas-conteudo">
         <h3 class="font-1-xl">Rio de Janeiro</h3>
         <div class="lojas-dados font-2-s cor-8">
-          <p>Rua Ali Perto, 25</p>
-          <p>Rio de Janeiro - RJ</p>
+          <p>Av. Dom Hélder Câmara 6644, Sala 822, 11º andar</p>
+          <p>Pilares - Centro Comercial DHC Offices.</p>
         </div>
         <div class="lojas-dados font-2-s cor-8">
-          <a href="mailto:rj@bikcraft.com">rj@bikcraft.com</a>
-          <a href="tel:+552199999999">+55 21 9999-9999</a>
+          <a href="mailto:ygorazevedonutri@gmail.com">ygorazevedonutri@gmail.com</a>
+          <a href="tel:+5521968429200">+55 (21) 96842-9200</a>
         </div>
         <p class="lojas-tempo font-1-s"><img src="./img/icones/horario.svg" alt="">08-18h de seg à dom</p>
       </div>
     </div>
 
     <div class="lojas-item">
-      <img src="./img/lojas/sp.jpg" alt="mapa marcando o endereço em Rua Ali Perto, 25 - São Paulo - SP">
+      <img src="./img/contato/avamericas.png" width="600"
+        alt="mapa marcando o endereço em Av. das Américas, 2480. Bloco 2 - sala 125 - Rio de Janeiro - RJ">
       <div class="lojas-conteudo">
-        <h3 class="font-1-xl">São Paulo</h3>
+        <h3 class="font-1-xl">Rio de Janeiro</h3>
         <div class="lojas-dados font-2-s cor-8">
-          <p>Rua Ali Perto, 25</p>
-          <p>São Paulo - SP</p>
+          <p>Av. das Américas, 2480. Bloco 2 - sala 125</p>
+          <p>Condomínio Lead Américas</p>
         </div>
         <div class="lojas-dados font-2-s cor-8">
-          <a href="mailto:sp@bikcraft.com">sp@bikcraft.com</a>
-          <a href="tel:+551199999999">+55 11 9999-9999</a>
+          <a href="mailto:ygorazevedonutri@gmail.com">ygorazevedonutri@gmail.com</a>
+          <a href="tel:+5521968429200">+55 (21) 96842-9200</a>
         </div>
-        <p class="lojas-tempo font-1-s"><img src="./img/icones/horario.svg" alt="">08-18h de seg à dom</p>
+        <p class="lojas-tempo font-1-s my-3"><img src="./img/icones/horario.svg" alt="">08-18h de seg à dom</p>
       </div>
     </div>
   </article>
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/ygoraz_logo.png" width="100" height="100" alt="Bikcraft">
+      <img src="./img/ygoraz_logo.png" width="100" height="110" alt="Bikcraft">
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
@@ -154,16 +165,42 @@
         <h3 class="font-2-l-b cor-0">Informações</h3>
         <nav>
           <ul class="font-1-m cor-5">
-            <li><a href="./">Bicicletas</a></li>
-            <li><a href="./">Seguros</a></li>
+            <li><a href="./acOnline.html">Acompanhamento online</a></li>
+            <li><a href="./acPresencial.html">Acompanhamento Presencial</a></li>
             <li><a href="./contato.html">Contato</a></li>
-            <li><a href="./termos.html">Termos e Condições</a></li>
+            <li><a href="./termos.html">Termos</a></li>
           </ul>
         </nav>
       </div>
-      <p class="footer-copy font-2-m cor-6">YgorAzevedo Nutri © Alguns direitos reservados.</p>
+      <p class="footer-copy font-2-m cor-6">Ygor Azevedo Nutri © Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script>
+    document.getElementById("contato-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Evita o envio tradicional do formulário
+  
+      const form = event.target;
+      const formData = new FormData(form);
+  
+      fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      }).then(response => {
+        if (response.ok) {
+          alert("✅ Seu email foi enviado com sucesso! Responderemos em até 24 horas ou entraremos em contato pelo WhatsApp.");
+          form.reset(); // Limpa o formulário após o envio
+        } else {
+          alert("⚠ Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde.");
+        }
+      }).catch(error => {
+        alert("🚨 Erro de conexão. Verifique sua internet e tente novamente.");
+      });
+    });
+  </script>
+  <script src="//code.tidio.co/0cdewe2qouhkhzchtrnhubs5yxn9ppb7.js" async></script>
 </body>
 
 </html>
