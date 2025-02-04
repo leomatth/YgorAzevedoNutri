@@ -6,6 +6,7 @@ body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   color: #111111;
+  overflow-x: hidden;
 }
 
 h1,
@@ -40,7 +41,7 @@ img[src$=".jpg"] {
 .plano-1 img {
     display: block;
     width: 100%;
-    height: 80vh;
+    height: auto;
     object-fit: cover; /* ou object-fit: contain, dependendo do efeito desejado */
     position: relative;
   }
@@ -110,8 +111,9 @@ img[src$=".jpg"] {
 
   .sup-wpp-box img{
     display: inline-block;
-    width: 35rem;
-    max-width: max-content;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     opacity: 55%;
   }
 
@@ -130,12 +132,13 @@ img[src$=".jpg"] {
 
   .sup-wpp {
     background: var(--cor-12);
-    height: 110vh;
+    height: 100vh;
+    width: 100%;
   }
 
   .app-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 0 5rem;
   }
   
@@ -156,7 +159,7 @@ img[src$=".jpg"] {
 
   .ac-app {
     width: 100vw;
-    height: 90vh;
+    height: auto;
   }
 
   .lista-app-box li {
@@ -197,8 +200,8 @@ img[src$=".jpg"] {
 
   .partes {
     display: flex;
-    flex-wrap: nowrap;
-    width: 190vw;
+    flex-wrap: wrap;
+    max-width: 100%;
     margin: 2rem;
     border-radius: 2rem;
     box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
@@ -208,4 +211,8 @@ img[src$=".jpg"] {
   .detail2 {
     background-color: var(--cor-p1);
     border-radius: 15px;
+  }
+
+  .partes, .ac-app, .plano-1 img {
+    max-width: 100%;
   }

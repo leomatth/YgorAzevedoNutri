@@ -27,7 +27,7 @@
       <a href="./">
         <img src="./img/ygoraz_logo.png" width="90" height="100" alt="YgorLogo">
       </a>
-
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
           <li><a href="./acPresencial.html">Acompanhamento Presencial</a></li>
@@ -200,6 +200,17 @@
       });
     });
   </script>
+   <script>
+    function toggleMenu() {
+        const menu = document.querySelector(".header-menu");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+    }
+    </script>
+
   <script src="//code.tidio.co/0cdewe2qouhkhzchtrnhubs5yxn9ppb7.js" async></script>
 </body>
 

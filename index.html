@@ -15,10 +15,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="icon" type="image/png" href="./img/ygoraz_logo.png">
   <title> Ygor Azevedo - Nutrição sob medida</title>
-
-
-
-
 </head>
 
 <body>
@@ -27,6 +23,8 @@
       <a href="./">
         <img src="./img/ygoraz_logo.png" width="90" height="100" alt="YgorLogo">
       </a>
+
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
 
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
@@ -78,6 +76,11 @@
             Hoje, sigo estudando e aplicando as melhores práticas, sempre baseado na ciência, para ajudar você a
             alcançar seus objetivos com saúde e eficiência.
             Será uma honra fazer parte da sua jornada!"</p>
+          <p class="texto-resumido font-1-s">"É uma alegria compartilhar minha história com você! Cresci no Jacarezinho (RJ) e
+            desde cedo me interessei por esportes. Aos 15, descobri a paixão pela musculação e, aos 18, entrei na
+            Marinha, onde conheci o CrossFit. Depois, iniciei Nutrição para unir saúde e alta performance. Hoje, sigo
+            estudando para ajudar você a alcançar seus objetivos com eficiência. Será uma honra fazer parte da sua
+            jornada!"</p>
           <div class="feedback-author">
           </div>
         </div>
@@ -101,7 +104,7 @@
               muitas opções. Fica fácil e prazeroso seguir o plano, pois tem tudo que eu gosto! E ainda consigo
               alcançar meus objetivos. Obrigada de verdade! Você é BRABO!"</p>
             <div class="feedback-author">
-              <img src="./img/feedbacks/feed2.png" alt="Foto do cliente">
+              <img class="rounded-5" src="./img/feedbacks/feed2.png" alt="Foto do cliente">
               <span> - Carolina Piccoli</span>
             </div>
           </div>
@@ -114,7 +117,7 @@
             <p class="feedback-text">"Meu amigo, quero agradecer pelo ótimo trabalho que esta fazendo, estou seguindo a
               dieta e só tenho obtido resultados positivos 👏💪"</p>
             <div class="feedback-author">
-              <img src="./img/feedbacks/feed3.png" alt="Foto do cliente">
+              <img class="rounded-5" src="./img/feedbacks/feed3.png" alt="Foto do cliente">
               <span> - Fernando Cunha</span>
             </div>
           </div>
@@ -126,7 +129,7 @@
               disposto nos treinos. Levando em consideração que o meu objetivo é a performance e não a estética ao
               poucos o corpo vai se moldando. Espetacular o processo que estou vivendo"</p>
             <div class="feedback-author">
-              <img src="./img/feedbacks/feed4.jpg" alt="Foto do cliente">
+              <img class="rounded-5" src="./img/feedbacks/feed4.jpg" alt="Foto do cliente">
               <span> - Marcos Filho</span>
             </div>
           </div>
@@ -139,7 +142,7 @@
               mais disciplina comigo mesmo! Cada dia aprendendo a importância do plano alimentar. Super grata pelo seu
               profissionalismo. Obrigada"</p>
             <div class="feedback-author">
-              <img src="./img/feedbacks/feed5.jpg" alt="Foto do cliente">
+              <img class="rounded-5" src="./img/feedbacks/feed5.jpg" alt="Foto do cliente">
               <span> - Vera Lucia</span>
             </div>
           </div>
@@ -154,7 +157,7 @@
 
               Recomendo muito!"</p>
             <div class="feedback-author">
-              <img src="./img/feedbacks/feed6.jpg" alt="Foto do cliente">
+              <img class="rounded-5" src="./img/feedbacks/feed6.jpg" alt="Foto do cliente">
               <span> - Guilherme Vargas</span>
             </div>
           </div>
@@ -170,7 +173,8 @@
           Mundial e o Pan-Americano. Ter um profissional tão dedicado ao meu lado faz toda a diferença!</p>
         <div class="feedback-author d-flex">
           <img class="" src="./img/feedbacks/feed7.jpg" alt="Foto do cliente">
-          <p class="fst-italic figure-caption text-center justify-content-center align-content-center"> - Lucas de Oliveira <br>- Atleta Profissional</p>
+          <p class="fst-italic figure-caption text-center justify-content-center align-content-center"> - Lucas de
+            Oliveira <br>- Atleta Profissional</p>
         </div>
       </div>
 
@@ -181,7 +185,8 @@
           treinamentos, e os resultados falam por si só.</p>
         <div class="feedback-author d-flex justify-content-center align-content-center">
           <img class="" src="./img/feedbacks/feed1.png" alt="Foto do cliente">
-          <p class="fst-italic figure-caption text-center justify-content-center align-content-center"> - Stephany Guimarães <br>- Atleta Profissional</p>
+          <p class="fst-italic figure-caption text-center justify-content-center align-content-center"> - Stephany
+            Guimarães <br>- Atleta Profissional</p>
         </div>
       </div>
 
@@ -256,6 +261,16 @@
 
   </script>
   <script src="//code.tidio.co/0cdewe2qouhkhzchtrnhubs5yxn9ppb7.js" async></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".header-menu");
+      if (menu.style.display === "flex") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "flex";
+      }
+    }
+  </script>
 
 </body>
 
