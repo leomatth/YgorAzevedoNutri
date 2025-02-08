@@ -67,3 +67,38 @@
       grid-template-columns: 1fr;
     }
   }
+
+  /* Tablets (até 1024px) */
+@media (max-width: 1024px) {  
+  /* Estilos para tablets */
+}
+
+/* Tablets pequenos e celulares grandes (até 991px) */
+@media (max-width: 991px) {  
+  /* Estilos para tablets pequenos e celulares grandes */
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {  
+  /* Estilos para celulares médios */
+}
+
+/* Celulares pequenos (até 600px) */
+@media (max-width: 600px) {  
+  /* Estilos para celulares pequenos */
+}
+
+/* Celulares muito pequenos (até 480px) */
+@media (max-width: 480px) {  
+  /* Estilos para celulares muito pequenos */
+}
+
+/* Celulares extra pequenos (até 375px) */
+@media (max-width: 375px) {  
+  /* Estilos para iPhone SE e similares */
+}
+
+/* Celulares ultra pequenos (até 320px) */
+@media (max-width: 320px) {  
+  /* Estilos para celulares ultra pequenos */
+}

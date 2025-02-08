@@ -59,24 +59,22 @@
     <div>
       <div class="sobre-container">
         <div class="sobre-box h-auto">
-          <p class="sobre-text font-1-xs lh-sm">"É uma grande alegria compartilhar um pouco da minha história com você.
-            Cresci
-            na comunidade do Jacarezinho,
-            na Zona Norte do Rio de Janeiro, onde morei até os 11 anos. Desde cedo me interessei por esportes, como judô
-            e natação, mas foi na
-            adolescência que descobri a paixão pela musculação.
-            Aos 15 anos, comecei a treinar em busca de um físico atlético, enfrentando os desafios das dietas populares
-            da época.
-            Aos 18 anos, entrei na Marinha do Brasil, conheci o CrossFit e passei a enxergar o condicionamento físico de
-            forma muito mais ampla.
-            Mais tarde, iniciei a faculdade de Nutrição, onde aprofundar meus conhecimentos sobre alimentação e
-            performance esportiva se tornou
-            minha missão. Antes mesmo de me formar, já atendia atletas de diversas modalidades, sempre focado em unir
-            saúde e alta performance.
-            Hoje, sigo estudando e aplicando as melhores práticas, sempre baseado na ciência, para ajudar você a
-            alcançar seus objetivos com saúde e eficiência.
-            Será uma honra fazer parte da sua jornada!"</p>
-          <p class="texto-resumido font-1-s">"É uma alegria compartilhar minha história com você! Cresci no Jacarezinho (RJ) e
+          <p class="sobre-text font-1-xs lh-sm">"É um prazer compartilhar um pouco da minha história com você. Cresci na
+            comunidade do Jacarezinho, na Zona Norte do Rio de Janeiro, onde morei até os 11 anos. Desde pequeno, me
+            interessei por esportes como judô e natação, mas foi na adolescência que a musculação se tornou minha
+            paixão. Aos 15 anos, comecei a treinar em busca de um físico atlético, enfrentando os desafios das dietas
+            populares da época.
+
+            Aos 18, entrei para a Marinha do Brasil, conheci o CrossFit e passei a enxergar o condicionamento físico de
+            forma muito mais ampla. Foi nessa trajetória que decidi estudar Nutrição, aprofundando meus conhecimentos
+            sobre alimentação e performance esportiva. Antes mesmo de me formar, já atendia atletas de diferentes
+            modalidades, sempre focado em unir saúde e alta performance.
+
+            Hoje, sigo estudando e aplicando as melhores estratégias, sempre baseado na ciência, para te ajudar a
+            alcançar seus objetivos com saúde e eficiência. Será uma honra fazer parte da sua jornada!
+            "</p>
+          <p class="texto-resumido font-1-s">"É uma alegria compartilhar minha história com você! Cresci no Jacarezinho
+            (RJ) e
             desde cedo me interessei por esportes. Aos 15, descobri a paixão pela musculação e, aos 18, entrei na
             Marinha, onde conheci o CrossFit. Depois, iniciei Nutrição para unir saúde e alta performance. Hoje, sigo
             estudando para ajudar você a alcançar seus objetivos com eficiência. Será uma honra fazer parte da sua
@@ -87,6 +85,7 @@
         <div>
           <img src="./img/quemsou-img.jpeg" alt="QuemSou">
         </div>
+      </div>
   </article>
 
   <article class="feedbacks">
@@ -260,15 +259,26 @@
 
 
   </script>
-  <script src="//code.tidio.co/0cdewe2qouhkhzchtrnhubs5yxn9ppb7.js" async></script>
+  <script>
+    const typebotInitScript = document.createElement("script");
+    typebotInitScript.type = "module";
+    typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js'
+    
+    Typebot.initBubble({
+      typebot: "fluxo-do-site-rapo9xt",
+      previewMessage: {
+        message: "Vamos buscar sua melhor versão?",
+        avatarUrl:
+          "https://s3.typebot.io/public/workspaces/clzqbq1bu000ikwpblfucatmc/typebots/clzropgwa003xfvtdenu9c2fu/hostAvatar?v=1724036810801",
+      },
+      theme: { button: { backgroundColor: "#1D1D1D" } },
+    });
+    `;
+    document.body.append(typebotInitScript);</script>
   <script>
     function toggleMenu() {
       const menu = document.querySelector(".header-menu");
-      if (menu.style.display === "flex") {
-        menu.style.display = "none";
-      } else {
-        menu.style.display = "flex";
-      }
+      menu.classList.toggle("open"); // Alterna a classe para abrir/fechar o menu
     }
   </script>
 

@@ -16,9 +16,8 @@
 
 .evo-box {
   background-color: white;
-  padding: 0.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: solid 1px rgba(81, 2, 2, 0.264);
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
@@ -27,12 +26,14 @@
   align-items: center;
   width: 600px;
   height: auto;
+  
 }
 
 .evo-box img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
+  border-radius: 10px;
 }
 
 .ac-carousel .swiper-slide {
@@ -73,4 +74,39 @@
   background-color: #ff5733;
   opacity: 1;
   cursor: pointer;
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {  
+  /* Estilos para tablets */
+}
+
+/* Tablets pequenos e celulares grandes (até 991px) */
+@media (max-width: 991px) {  
+  /* Estilos para tablets pequenos e celulares grandes */
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {  
+  /* Estilos para celulares médios */
+}
+
+/* Celulares pequenos (até 600px) */
+@media (max-width: 600px) {  
+  /* Estilos para celulares pequenos */
+}
+
+/* Celulares muito pequenos (até 480px) */
+@media (max-width: 480px) {  
+  /* Estilos para celulares muito pequenos */
+}
+
+/* Celulares extra pequenos (até 375px) */
+@media (max-width: 375px) {  
+  /* Estilos para iPhone SE e similares */
+}
+
+/* Celulares ultra pequenos (até 320px) */
+@media (max-width: 320px) {  
+  /* Estilos para celulares ultra pequenos */
 }

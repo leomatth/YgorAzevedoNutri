@@ -1,5 +1,5 @@
 main {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 body {
@@ -38,181 +38,249 @@ img[src$=".jpg"] {
   border-radius: 4px;
 }
 
+img[src$=".png"] {
+  border-radius: 4px;
+}
+
+.plano-1 {
+  background: var(--cor-12);
+
+}
+
 .plano-1 img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* ou object-fit: contain, dependendo do efeito desejado */
-    position: relative;
-  }
-  
-  .plano-1 h2 {
-    top: 225%;
-    z-index: 1;
-    left: 17%;
-  }
+  display: block;
+  width: auto;
+  height: 400px;
+  object-fit: cover;
+  position: relative;
+}
 
-  .plano-1 div {
-    top: 250%;
-  }
+.plano-1 .img1 {
+  width: 400px;
+}
 
-  .plano-1 p {
-    margin-left: 15rem;
-    margin-right: 10rem;
-    line-height: 2rem;
-    text-shadow: 0px 0px 8px rgba(114, 8, 8, 0.8);
+.plano-1 h2 {
+  top: 225%;
+  z-index: 1;
+  left: 17%;
+}
+
+.plano-1 div {
+  top: 250%;
+}
+
+.plano-1 .ac {
+  margin-top: -3rem;
+}
+
+.partes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-self: center;
+  max-width: fit-content;
+  gap: 5rem;
+  margin: 5rem;
+  height: 70vh;
+}
+
+.partes p {
+  width: 500px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(81, 2, 2, 0.384);
+  text-shadow: none;
+  max-width: 100%;
+
+}
+
+.partes .sup-wpp-box-ap {
+  margin: 0;
+  padding: 0;
 }
 
 .av-fisica {
-    grid-template-columns: 1fr 5px 1fr;
-    margin-bottom: 3rem;
-    gap: 1rem;
+  grid-template-columns: 1fr 5px 1fr;
+  margin-bottom: 3rem;
+  gap: 1rem;
 }
 
 .av-fisica img {
-    border-radius: 15px;
-    
+  border-radius: 15px;
+
 }
 
 .vazio-enfeite {
-    background-color: var(--cor-p1);
-    border-radius: 15px;
+  background-color: var(--cor-p1);
+  border-radius: 15px;
 }
 
 .av-fisica-box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    width: 600px;
-    height: auto;
-    line-height: 1.6rem;
-  }
-  
-  .sup-wpp-box {
-    background-color: #f0f0f0;
-    padding: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.393);
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
-    width: 35rem;
-    margin-left: 7rem;
-  }
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 600px;
+  height: auto;
+  line-height: 1.6rem;
+}
 
-  .sup-wpp-box img{
-    display: inline-block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    opacity: 55%;
-  }
+.sup-wpp-box-ap {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(81, 2, 2, 0.393);
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 35rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
 
-  .sup-img {
-    width: auto;
-    height: 25rem;
-    margin-left: 3rem;
-    margin-top: 3rem;
-  }
+.sup-wpp-box img {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  opacity: 55%;
+  margin: 0;
+}
 
-  .sup-wpp-main {
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    height: 25rem;
-  }
+.sup-img {
+  width: auto;
+  height: 25rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
 
-  .sup-wpp {
-    background: var(--cor-12);
-    height: 100vh;
-    width: 100%;
-  }
+.sup-wpp-main {
+  grid-template-columns: 1fr 5px 1fr;
+  justify-content: space-between;
+}
 
-  .app-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 0 5rem;
-  }
-  
-  .app-box {
-    min-width: 300px; /* Garante que o texto não fique muito estreito em telas menores */
-    width: 500px;
-    background-color: var(--cor-0);
-    padding: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.384);
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin: 5rem;
-  }
+.sup-wpp-main .vazio-enfeite {
+  height: 25rem;
+  margin-top: 3rem;
+}
 
-  .ac-app {
-    width: 100vw;
-    height: auto;
-  }
+.sup-wpp {
+  background: var(--cor-12);
+  width: 100%;
+}
 
-  .lista-app-box li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-left: 2rem;
-  }
-  
-  .lista-app-box li img {
-    margin-right: 20px; /* Espaço entre o ícone e o texto */
-  }
-  
-  .introducao-bg-acp {
-    background: var(--cor-12);
-    height: 37.5rem;
-  }
-  
-  .introducao-acp {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px 40px;
-  }
-  .introducao-acp img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-  }
+.app-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 5rem;
+}
 
-  .introducao-conteudo-acp {
-    height: 50vh;
-  }
+.app-box {
+  min-width: 300px;
+  /* Garante que o texto não fique muito estreito em telas menores */
+  width: 500px;
+  background-color: var(--cor-0);
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(81, 2, 2, 0.384);
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 5rem;
+}
 
-  .plano-1 .ac{
-    margin-top: -3rem;
-  }
+.ac-app {
+  width: 100vw;
+  height: auto;
+}
 
-  .partes {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 2rem;
-    border-radius: 2rem;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
+.lista-app-box li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 2rem;
+}
 
-  }
+.lista-app-box li img {
+  margin-right: 20px;
+  /* Espaço entre o ícone e o texto */
+}
 
-  .detail2 {
-    background-color: var(--cor-p1);
-    border-radius: 15px;
-  }
+.introducao-bg-acp {
+  background: var(--cor-12);
+  height: 37.5rem;
+}
 
-  .partes, .ac-app, .plano-1 img {
-    max-width: 100%;
-  }
+.introducao-acp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+
+.introducao-acp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.introducao-conteudo-acp {
+  height: 50vh;
+}
+
+
+.detail2 {
+  background-color: var(--cor-p1);
+  border-radius: 15px;
+}
+
+.partes,
+.ac-app,
+.plano-1 img {
+  max-width: 100%;
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  /* Estilos para tablets */
+}
+
+/* Tablets pequenos e celulares grandes (até 991px) */
+@media (max-width: 991px) {
+  /* Estilos para tablets pequenos e celulares grandes */
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {
+  /* Estilos para celulares médios */
+}
+
+/* Celulares pequenos (até 600px) */
+@media (max-width: 600px) {
+  /* Estilos para celulares pequenos */
+}
+
+/* Celulares muito pequenos (até 480px) */
+@media (max-width: 480px) {
+  /* Estilos para celulares muito pequenos */
+}
+
+/* Celulares extra pequenos (até 375px) */
+@media (max-width: 375px) {
+  /* Estilos para iPhone SE e similares */
+}
+
+/* Celulares ultra pequenos (até 320px) */
+@media (max-width: 320px) {
+  /* Estilos para celulares ultra pequenos */
+}

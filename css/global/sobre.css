@@ -61,64 +61,83 @@
 
   }
   
-  @media (max-width: 425px){
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {  
+  /* Estilos para tablets */
+}
 
-    .sobre {
-      display: grid;
-      height: 80vh;
-      background-color: #f0f0f0;
-      justify-content: center;
-      align-content: center;
-      
-  }
-  
-  .sobre h2 {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      margin: 0;
-      padding: 0;
-      margin-top: -7rem;
-  }
-  
-  .box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-  }
-  
-  .sobre-title {
-      margin-top: -7rem;
-  }
-  
-  .sobre img {
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-  
-  }
-  
-  .sobre-box {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-      text-align: center;
-      margin: auto;
-      width: 350px;
-      margin-top: -10rem;
-  }
-  
-  .sobre-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-top: -5rem;
-  }
+/* Tablets pequenos e celulares grandes (até 991px) */
+@media (max-width: 991px) {  
+  /* Estilos para tablets pequenos e celulares grandes */
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {  
+  /* Estilos para celulares médios */
+}
+
+/* Celulares pequenos (até 600px) */
+@media (max-width: 600px) {  
+  /* Estilos para celulares pequenos */
+}
+
+/* Celulares muito pequenos (até 480px) */
+@media (max-width: 480px) {  
+  /* Estilos para celulares muito pequenos */
+}
+
+/* Celulares extra pequenos (até 375px) */
+@media (max-width: 376px) {  
+  /* Estilos para iPhone SE e similares */
+  .sobre {
+    display: grid;
+    height: 80vh;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-content: center;
     
-  .sobre-text {
-      display: none;
-    }
+}
+
+.sobre h2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
+}
+
+.sobre img {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
+
+}
+
+.sobre-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
+    text-align: center;
+    margin: auto;
+    width: 350px;
+    margin-top: -4rem;
+}
+
+.sobre-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
   
-  .texto-resumido {
-    display: block;
+.sobre-text {
+    display: none;
   }
+
+.texto-resumido {
+  display: block;
+}
 }
