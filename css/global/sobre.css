@@ -91,10 +91,12 @@
   /* Estilos para iPhone SE e similares */
   .sobre {
     display: grid;
-    height: 80vh;
+    grid-template-columns: 1fr;
+    height: 100vh;
     background-color: #f0f0f0;
     justify-content: center;
     align-content: center;
+    position: relative;
     
 }
 
@@ -103,6 +105,7 @@
     justify-content: center;
     align-content: center;
     padding: 0;
+    margin-top: -7rem;
 }
 
 .box {
@@ -110,11 +113,16 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-}
+
+  }
 
 .sobre img {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
+    position: absolute;
+    right: 0.75rem;
+    bottom: 3rem;
+    width: 350px;
 
 }
 
@@ -125,7 +133,7 @@
     text-align: center;
     margin: auto;
     width: 350px;
-    margin-top: -4rem;
+    margin-top: -10rem;
 }
 
 .sobre-container {

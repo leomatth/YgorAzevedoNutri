@@ -67,11 +67,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px;
+
   }
 
   .introducao-conteudo {
     align-self: end;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
   }
 
   .introducao img {
