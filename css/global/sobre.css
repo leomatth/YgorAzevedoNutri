@@ -1,16 +1,16 @@
 .sobre {
-    display: grid;
-    height: 120vh;
-    background-color: #f0f0f0;
-    margin-top: -120px;
-    justify-content: center;
-    align-content: center;
-    
+  display: grid;
+  height: 120vh;
+  background-color: #f0f0f0;
+  margin-top: -120px;
+  justify-content: center;
+  align-content: center;
+
 }
 
 .sobre h2 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .texto-resumido {
@@ -18,77 +18,97 @@
 }
 
 .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
 
 }
 
 .sobre-title {
-    margin-top: -1rem;
+  margin-top: -1rem;
 }
 
 .sobre img {
-    border-radius: 10px;
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-
+  max-width: fit-content;
+  width: 41rem;
 }
 
 .sobre-box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-    
-    text-align: center;
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 6rem;
+  text-align: center;
+  max-width: 600px;
+  width: 41rem;
+  margin: auto;
 }
 
 .sobre-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 6rem;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 6rem;
 }
-  
+
 .sobre-text {
-    font-size: 1.2em;
-    margin-bottom: 0.5rem;
-    max-width: fit-content;
+  font-size: 1.2em;
+  margin-bottom: 0.5rem;
+  max-width: fit-content;
 
+}
+
+@media (max-width: 1024px) {
+  .sobre {
+    height: 90vh;
   }
-  
-/* Tablets (até 1024px) */
-@media (max-width: 1024px) {  
-  /* Estilos para tablets */
+
+  .sobre-container {
+    display: grid;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+
+  .sobre-title {
+    padding: 0;
+    max-height: auto;
+    height: fit-content;
+  }
+
+  .sobre-text {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .sobre img {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
+    max-width: fit-content;
+    width: 30rem;
+  }
+
+  .sobre-box {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
+    text-align: center;
+    max-width: 600px;
+    width: 30rem;
+  }
 }
 
-/* Tablets pequenos e celulares grandes (até 991px) */
-@media (max-width: 991px) {  
-  /* Estilos para tablets pequenos e celulares grandes */
-}
+@media (max-width: 768px) {}
 
-/* Celulares médios (até 768px) */
-@media (max-width: 768px) {  
-  /* Estilos para celulares médios */
-}
+@media (max-width: 600px) {}
 
-/* Celulares pequenos (até 600px) */
-@media (max-width: 600px) {  
-  /* Estilos para celulares pequenos */
-}
+@media (max-width: 480px) {}
 
-/* Celulares muito pequenos (até 480px) */
-@media (max-width: 480px) {  
-  /* Estilos para celulares muito pequenos */
-}
-
-/* Celulares extra pequenos (até 375px) */
-@media (max-width: 376px) {  
-  /* Estilos para iPhone SE e similares */
+@media (max-width: 376px) {
   .sobre {
     display: grid;
     grid-template-columns: 1fr;
@@ -97,18 +117,18 @@
     justify-content: center;
     align-content: center;
     position: relative;
-    
-}
 
-.sobre h2 {
+  }
+
+  .sobre h2 {
     display: flex;
     justify-content: center;
     align-content: center;
     padding: 0;
     margin-top: -7rem;
-}
+  }
 
-.box {
+  .box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,7 +136,7 @@
 
   }
 
-.sobre img {
+  .sobre img {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
     position: absolute;
@@ -124,9 +144,9 @@
     bottom: 3rem;
     width: 350px;
 
-}
+  }
 
-.sobre-box {
+  .sobre-box {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
@@ -134,18 +154,18 @@
     margin: auto;
     width: 350px;
     margin-top: -10rem;
-}
+  }
 
-.sobre-container {
+  .sobre-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-  
-.sobre-text {
+  }
+
+  .sobre-text {
     display: none;
   }
 
-.texto-resumido {
-  display: block;
-}
+  .texto-resumido {
+    display: block;
+  }
 }

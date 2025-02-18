@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -57,35 +57,33 @@
     <div class="sobre-title">
       <h2 class="container font-1-xxl">Quem é Ygor Azevedo<span class="cor-p1">?</span></h2>
     </div>
-    <div>
-      <div class="sobre-container">
-        <div class="sobre-box h-auto">
-          <p class="sobre-text font-1-xs lh-sm">"É um prazer compartilhar um pouco da minha história com você. Cresci na
-            comunidade do Jacarezinho, na Zona Norte do Rio de Janeiro, onde morei até os 11 anos. Desde pequeno, me
-            interessei por esportes como judô e natação, mas foi na adolescência que a musculação se tornou minha
-            paixão. Aos 15 anos, comecei a treinar em busca de um físico atlético, enfrentando os desafios das dietas
-            populares da época.
+    <div class="sobre-container">
+      <div class="sobre-box h-auto">
+        <p class="sobre-text font-1-xs lh-sm">"É um prazer compartilhar um pouco da minha história com você. Cresci na
+          comunidade do Jacarezinho, na Zona Norte do Rio de Janeiro, onde morei até os 11 anos. Desde pequeno, me
+          interessei por esportes como judô e natação, mas foi na adolescência que a musculação se tornou minha
+          paixão. Aos 15 anos, comecei a treinar em busca de um físico atlético, enfrentando os desafios das dietas
+          populares da época.
 
-            Aos 18, entrei para a Marinha do Brasil, conheci o CrossFit e passei a enxergar o condicionamento físico de
-            forma muito mais ampla. Foi nessa trajetória que decidi estudar Nutrição, aprofundando meus conhecimentos
-            sobre alimentação e performance esportiva. Antes mesmo de me formar, já atendia atletas de diferentes
-            modalidades, sempre focado em unir saúde e alta performance.
+          Aos 18, entrei para a Marinha do Brasil, conheci o CrossFit e passei a enxergar o condicionamento físico de
+          forma muito mais ampla. Foi nessa trajetória que decidi estudar Nutrição, aprofundando meus conhecimentos
+          sobre alimentação e performance esportiva. Antes mesmo de me formar, já atendia atletas de diferentes
+          modalidades, sempre focado em unir saúde e alta performance.
 
-            Hoje, sigo estudando e aplicando as melhores estratégias, sempre baseado na ciência, para te ajudar a
-            alcançar seus objetivos com saúde e eficiência. Será uma honra fazer parte da sua jornada!
-            "</p>
-          <p class="texto-resumido font-1-s">"É uma alegria compartilhar minha história com você! Cresci no Jacarezinho
-            (RJ) e
-            desde cedo me interessei por esportes. Aos 15, descobri a paixão pela musculação e, aos 18, entrei na
-            Marinha, onde conheci o CrossFit. Depois, iniciei Nutrição para unir saúde e alta performance. Hoje, sigo
-            estudando para ajudar você a alcançar seus objetivos com eficiência. Será uma honra fazer parte da sua
-            jornada!"</p>
-          <div class="feedback-author">
-          </div>
+          Hoje, sigo estudando e aplicando as melhores estratégias, sempre baseado na ciência, para te ajudar a
+          alcançar seus objetivos com saúde e eficiência. Será uma honra fazer parte da sua jornada!
+          "</p>
+        <p class="texto-resumido font-1-s">"É uma alegria compartilhar minha história com você! Cresci no Jacarezinho
+          (RJ) e
+          desde cedo me interessei por esportes. Aos 15, descobri a paixão pela musculação e, aos 18, entrei na
+          Marinha, onde conheci o CrossFit. Depois, iniciei Nutrição para unir saúde e alta performance. Hoje, sigo
+          estudando para ajudar você a alcançar seus objetivos com eficiência. Será uma honra fazer parte da sua
+          jornada!"</p>
+        <div class="feedback-author">
         </div>
-        <div>
-          <img src="./img/quemsou-img.jpeg" alt="QuemSou">
-        </div>
+      </div>
+      <div>
+        <img src="./img/quemsou-img.jpeg" alt="QuemSou">
       </div>
   </article>
 
@@ -242,7 +240,7 @@
       keyboard: true,
       loop: true,
       autoplay: {
-        delay: 5000, // 5 segundos
+        delay: 5000, // seg
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -253,11 +251,25 @@
         el: '.swiper-pagination',
         clickable: true,
       },
-      slidesPerView: 3, // Mostra apenas um slide por vez
-      spaceBetween: 50, // Espaço entre os slides
+      slidesPerView: 3,
+      spaceBetween: 50,
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50
+        },
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        }
+      }
     }
-    );
 
+    );
 
   </script>
   <script>
