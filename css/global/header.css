@@ -72,10 +72,78 @@
 @media (max-width: 600px) {
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) and (max-width:599px) {
+  
+  .hamburger {
+    display: block;
+    justify-items: center;
+    align-items: center;
+    color: var(--cor-0);
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    margin-top: -0.5rem;
+    margin-left: 15rem;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+  }
+
+.header {
+    display: flex;
 }
 
-@media (max-width: 375px) {
+.header img {
+    width: 40px;
+    height: 40px;
+}
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: auto;
+    background: #383837f0;
+    padding: 20px;
+    transition: left 0.3s ease-in-out; 
+    z-index: 1000;
+    border-radius: 0rem 0rem 1rem 0rem;
+}
+
+
+.header-menu.open {
+    left: 0; 
+}
+
+.header-menu li {
+    text-align: center;
+    box-shadow: 0 0 20px rgba(73, 81, 2, 0.384);
+
+}
+
+.header-menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    background: var(--cor-11);
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: small;
+}
+
+.header-menu a:hover {
+    background-color: var(--cor-10);
+}
+
+.header a:after {
+    display: none;
+}
+}
+
+@media (min-width:375px) and (max-width: 480px) {
 
   .hamburger {
     display: block;
