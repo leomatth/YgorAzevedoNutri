@@ -163,7 +163,7 @@
 @media (max-width: 480px) {  
 }
 
-@media (max-width: 376px) {  
+@media (max-width: 375px) {  
   .feedbacks {
     display: grid;
     justify-content: center;
@@ -177,7 +177,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 0;
+    margin-top: 2rem;
   }
   
   .swiper {
@@ -216,16 +216,13 @@
   }
   
   .feedback-fixos {
-    margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr;
-    max-width: auto;
-    width: 100vw;
-  }
-  
-  .feedback-fixos .feedback-box {
-    max-width: max-content;
-    justify-content: s;
+    height: 80vh;
+    max-height: auto;
+    margin: 0;
+    background-color: #f0f0f0;
+
   }
   
   .feedback-fixos .feedback-box img {

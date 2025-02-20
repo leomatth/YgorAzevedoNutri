@@ -1,6 +1,6 @@
 .sobre {
   display: grid;
-  height: 120vh;
+  height: 100vh;
   background-color: #f0f0f0;
   margin-top: -120px;
   justify-content: center;
@@ -32,25 +32,27 @@
 .sobre img {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-  max-width: fit-content;
-  width: 41rem;
+  max-width: 40rem;
+
 }
 
 .sobre-box {
   background-color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
   text-align: center;
-  max-width: 600px;
-  width: 41rem;
+  max-width: 40rem;
   margin: auto;
+  margin-bottom: 6rem;
 }
 
 .sobre-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 6rem;
+  gap: 3rem;
+
 }
 
 .sobre-text {
@@ -60,47 +62,9 @@
 
 }
 
-@media (max-width: 1024px) {
-  .sobre {
-    height: 90vh;
-  }
+@media (max-width: 1024px) {}
 
-  .sobre-container {
-    display: grid;
-    background-color: #f0f0f0;
-    justify-content: center;
-    align-content: center;
-    gap: 2rem;
-    padding: 3rem 0;
-  }
-
-  .sobre-title {
-    padding: 0;
-    max-height: auto;
-    height: fit-content;
-  }
-
-  .sobre-text {
-    font-size: 0.9rem;
-    text-align: justify;
-  }
-
-  .sobre img {
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-    max-width: fit-content;
-    width: 30rem;
-  }
-
-  .sobre-box {
-    background-color: white;
-    padding: 1rem;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-    text-align: center;
-    max-width: 600px;
-    width: 30rem;
-  }
-}
+@media (max-width: 991px) {}
 
 @media (max-width: 768px) {}
 
@@ -108,15 +72,13 @@
 
 @media (max-width: 480px) {}
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   .sobre {
     display: grid;
-    grid-template-columns: 1fr;
-    height: 100vh;
+    height: 80vh;
     background-color: #f0f0f0;
     justify-content: center;
     align-content: center;
-    position: relative;
 
   }
 
@@ -125,7 +87,8 @@
     justify-content: center;
     align-content: center;
     padding: 0;
-    margin-top: -7rem;
+    padding-bottom: 1rem;
+    margin-top: 8rem;
   }
 
   .box {
@@ -133,16 +96,14 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-
   }
 
   .sobre img {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-    position: absolute;
-    right: 0.75rem;
-    bottom: 3rem;
+    margin: auto;
     width: 350px;
+    margin-top: 1rem;
 
   }
 
@@ -153,12 +114,13 @@
     text-align: center;
     margin: auto;
     width: 350px;
-    margin-top: -10rem;
+    margin-bottom: -3rem;
   }
 
   .sobre-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 
   .sobre-text {
