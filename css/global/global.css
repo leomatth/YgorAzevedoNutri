@@ -13,7 +13,10 @@ p,
 blockquote {
   margin: 0px;
 }
-
+main{
+  margin: 0;
+  padding: 0;
+}
 ul {
   padding: 0px;
   list-style: none;

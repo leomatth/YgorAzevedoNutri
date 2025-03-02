@@ -1,16 +1,16 @@
 .sobre {
-  display: grid;
-  height: 100vh;
-  background-color: #f0f0f0;
-  margin-top: -7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-content: center;
-
+  height: auto;
+  background-color: #f0f0f0;
+  padding: 5%;
 }
 
 .sobre h2 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .texto-resumido {
@@ -25,35 +25,34 @@
 
 }
 
-.sobre-title {
-  margin-top: -1rem;
-}
-
-.sobre img {
-  border-radius: 0.625rem;
-  box-shadow: 0 0 1.25rem rgba(81, 2, 2, 0.264);
-  max-width: 40rem;
-
+.sobre-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .sobre-box {
   background-color: white;
-  padding: 1.5rem;
-  border-radius: 0.625rem;
-  box-shadow: 0 0 1.25rem rgba(81, 2, 2, 0.264);
+  padding: 3%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 40rem;
-  margin: auto;
-  margin-bottom: 6rem;
+  line-height: 1.5;
+  font-size: small;
+  font-size: bold;
+  padding-bottom: 0;
 }
 
-.sobre-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 6rem;
-  gap: 3rem;
-
+.sobre img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
+
 
 .sobre-text {
   font-size: 1.2em;
@@ -62,136 +61,51 @@
 
 }
 
-@media (max-width: 1920px) {
-  .sobre-title {
-    margin-top: 2rem;
+@media (max-width: 1024px) {
+  .sobre-container {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 }
 
-@media (max-width: 1024px) {}
-
-@media (max-width: 991px) {}
-
-@media (max-width: 768px) {}
-
-@media (max-width: 600px) {}
-
-@media (min-width: 480px) and (max-width:599px) {
+@media (max-width: 768px) {
   .sobre {
-    display: grid;
-    height: 80vh;
-    background-color: #f0f0f0;
-    justify-content: center;
-    align-content: center;
-
-  }
-
-  .sobre h2 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 0;
-    padding-bottom: 1rem;
-    margin-top: 8rem;
-  }
-
-  .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-  }
-
-  .sobre img {
-    border-radius: 0.625rem;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-    margin: auto;
-    width: 21.875rem;
-    margin-top: 1rem;
-
-  }
-
-  .sobre-box {
-    background-color: white;
-    border-radius: 0.625rem;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-    text-align: center;
-    margin: auto;
-    width: 21.875rem;
-    margin-bottom: -3rem;
-  }
-
-  .sobre-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
-  .sobre-text {
-    display: none;
-  }
-
-  .texto-resumido {
-    display: block;
+    padding: 10%;
   }
 }
 
-@media (min-width:375px) and (max-width: 480px) {
+@media (max-width: 600px) {
   .sobre {
-    display: grid;
-    height: 80vh;
-    background-color: #f0f0f0;
-    justify-content: center;
-    align-content: center;
-
+    padding: 8%;
   }
-
-  .sobre h2 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 0;
-    padding-bottom: 1rem;
-    margin-top: 8rem;
-  }
-
-  .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-  }
-
-  .sobre img {
-    border-radius: 0.625rem;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-    margin: auto;
-    width: 21.875rem;
-    margin-top: 1rem;
-
-  }
-
-  .sobre-box {
-    background-color: white;
-    border-radius: 0.625rem;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-    text-align: center;
-    margin: auto;
-    width: 21.875rem;
-    margin-bottom: -3rem;
-  }
-
   .sobre-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
+    gap: 3%;
   }
-
-  .sobre-text {
-    display: none;
+  .sobre-box {
+    padding: 5%;
   }
+}
 
-  .texto-resumido {
-    display: block;
+@media (max-width: 480px) {
+  .sobre {
+    padding: 6%;
+  }
+  .sobre h2 {
+    font-size: 1.5rem;
+  }
+  .sobre img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .sobre {
+    padding: 5%;
+  }
+  .sobre h2 {
+    font-size: 1.3rem;
+  }
+  .sobre img {
+    max-width: 85%;
   }
 }

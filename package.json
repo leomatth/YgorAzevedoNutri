@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@plasmicapp/react-web": "^0.2.374",
     "bootstrap": "^5.3.3"
   }
 }
