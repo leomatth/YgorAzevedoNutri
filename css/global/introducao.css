@@ -42,24 +42,27 @@
   margin-bottom: 6.25%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .introducao {
     flex-direction: column;
     text-align: center;
   }
 
-  .introducao-conteudo,
-  .introducao img {
+  .introducao-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: auto;
     max-width: 100%;
   }
 
   .introducao img {
-    max-height: 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  .introducao img {
     display: none;
+  }
+  .introducao p{
+    margin: 0;
+    padding: 0;
   }
 }

@@ -1,5 +1,6 @@
 .ac-carousel {
   height: 80vh;
+  padding-bottom: 50%;
 }
 
 .ac-carousel .swiper {
@@ -52,7 +53,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
 }
 
 .swiper-pagination-bullet {

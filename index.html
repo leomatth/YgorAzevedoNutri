@@ -22,7 +22,7 @@
   <header class="header-bg sticky-top">
     <div class="header container">
       <a href="./">
-        <img src="./img/ygoraz_logo.png" width="100" height="100" alt="YgorLogo">
+        <img src="./img/ygoraz_logo.png" width="90" height="90" alt="YgorLogo">
       </a>
 
       <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -46,9 +46,9 @@
         <p class="font-2-l cor-5">Acompanhamento individual, proporcionando toda atenção necessária para seu melhor
           conforto e confiança.</p>
         <a class="botao" href="./acPresencial.html">Atendimento Presencial</a>
-        <a class="botao mx-2" href="./acOnline.html">Atendimento Online</a>
+        <a class="botao" href="./acOnline.html">Atendimento Online</a>
       </div>
-        <img class="container" src="./img/perfil.png" width="1000" height="1250" alt="YgorAzevedoPf">
+      <img class="container" src="./img/perfil.png" width="1000" height="1250" alt="YgorAzevedoPf">
     </div>
   </main>
 
@@ -75,13 +75,16 @@
         <p class="texto-resumido font-1-s">"É uma alegria compartilhar minha história com você! Cresci no Jacarezinho
           (RJ) e
           desde cedo me interessei por esportes. Aos 15, descobri a paixão pela musculação e, aos 18, entrei na
-          Marinha, onde conheci o CrossFit. Depois, iniciei Nutrição para unir saúde e alta performance. Hoje, sigo
-          estudando para ajudar você a alcançar seus objetivos com eficiência. Será uma honra fazer parte da sua
+          Marinha, onde conheci o CrossFit e passei a enxergar o condicionamento físico de
+          forma muito mais ampla. Foi nessa trajetória que decidi estudar Nutrição, aprofundando meus conhecimentos
+          sobre alimentação e performance esportiva. Antes mesmo de me formar, já atendia atletas de diferentes
+          modalidades, sempre focado em unir saúde e alta performance.
+          Hoje, já formado, sigo estudando para ajudar você a alcançar seus objetivos com eficiência. Será uma honra fazer parte da sua
           jornada!"</p>
         <div class="feedback-author">
         </div>
       </div>
-        <img src="./img/quemsou-img.jpeg" alt="QuemSou">
+      <img src="./img/quemsou-img.jpeg" alt="QuemSou">
   </article>
 
   <article class="feedbacks">
@@ -282,9 +285,14 @@
           "https://s3.typebot.io/public/workspaces/clzqbq1bu000ikwpblfucatmc/typebots/clzropgwa003xfvtdenu9c2fu/hostAvatar?v=1724036810801",
       },
       theme: { button: { backgroundColor: "#1D1D1D" } },
+      position: {
+        bottom: "20px",
+        right: "20px"  
+      }
     });
     `;
-    document.body.append(typebotInitScript);</script>
+    document.body.append(typebotInitScript);
+  </script>
   <script>
     function toggleMenu() {
       const menu = document.querySelector(".header-menu");

@@ -1,7 +1,6 @@
 .header-bg {
   background-color: var(--cor-12);
   overflow: hidden;
-
 }
 
 .header {
@@ -72,40 +71,35 @@
   }
 }
 
-@media (max-width: 991px) {
-  .header-menu {
-    gap: 1.25rem;
+@media (max-width: 600px) {
+  .header{
+    display: flex;
+    flex-wrap: nowrap;  
   }
-}
-
-@media (max-width: 768px) {
   .hamburger {
     display: block;
     color: var(--cor-0);
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 10%; /* 1.875rem -> 10% */
+    height: 10%; /* 1.875rem -> 10% */
     cursor: pointer;
     z-index: 1001;
     position: relative;
+    margin-left: 50%;
   }
 
-  .header img {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
 
   .header-menu {
     flex-direction: column;
     position: fixed;
     top: 0;
-    left: -15rem; /* 250px -> rem */
-    width: 15rem;
+    left: -100%; /* 250px -> 100% */
+    width: 60%; /* 15rem -> 60% */
     height: auto;
     background: #383837f0;
-    padding: 1.25rem;
+    padding: 5%; /* 1.25rem -> 5% */
     transition: left 0.3s ease-in-out;
     z-index: 1000;
-    border-radius: 0 0 1rem 0;
+    border-radius: 0 0 5% 0; /* 1rem -> 5% */
   }
 
   .header-menu.open {
@@ -114,7 +108,7 @@
 
   .header-menu li {
     text-align: center;
-    box-shadow: 0 0 1.25rem rgba(73, 81, 2, 0.384);
+    box-shadow: 0 0 5% rgba(73, 81, 2, 0.384); /* 1.25rem -> 5% */
   }
 
   .header-menu a {
@@ -122,9 +116,9 @@
     text-decoration: none;
     display: block;
     background: var(--cor-11);
-    padding: 0.75rem 1rem;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
+    padding: 3% 5%; /* 0.75rem 1rem -> 3% 5% */
+    border-radius: 2%; /* 0.25rem -> 2% */
+    font-size: 2.5%; /* 0.875rem -> 2.5% */
   }
 
   .header-menu a:hover {
@@ -133,26 +127,11 @@
 
   .header a:after {
     display: none;
-  }
-}
-
-@media (max-width: 600px) {
+  } 
   .header {
-    padding: 0.75rem 3%;
+    padding: 3% 3%;
   }
   .header-menu {
-    width: 12rem;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  .hamburger {
-    margin-left: 10rem;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 480px) {
-  .hamburger {
-    margin-left: 8rem;
+    width: 50%; /* 12rem -> 50% */
   }
 }

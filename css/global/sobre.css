@@ -78,34 +78,32 @@
   .sobre {
     padding: 8%;
   }
+
   .sobre-container {
     gap: 3%;
   }
+  .sobre-title {
+    margin: 0;
+    justify-self: center;
+    padding: 0;
+  }
+
+  .sobre-title h2 {
+    padding: 0;
+  }
+
   .sobre-box {
     padding: 5%;
   }
-}
 
-@media (max-width: 480px) {
-  .sobre {
-    padding: 6%;
+  .sobre-text {
+    display: none;
   }
-  .sobre h2 {
-    font-size: 1.5rem;
-  }
-  .sobre img {
-    max-width: 90%;
-  }
-}
 
-@media (max-width: 375px) {
-  .sobre {
-    padding: 5%;
-  }
-  .sobre h2 {
-    font-size: 1.3rem;
-  }
-  .sobre img {
-    max-width: 85%;
+  .texto-resumido {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    max-width: fit-content;
+    display: flex;
   }
 }
