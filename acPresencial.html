@@ -258,29 +258,42 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    // Inicializando o Swiper somente nesta página
-    var swiper = new Swiper(".swiper", {
+    let swiper = new Swiper('.swiper', {
       cssMode: true,
       keyboard: true,
       loop: true,
       autoplay: {
-        delay: 5000, // 5 segundos
+        delay: 5000, // seg
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }, // Habilita o loop
-      pagination: {
-        el: ".swiper-pagination",
-        type: "bullets", // Tipo de paginação
-        clickable: true, // Torna a paginação clicável
-        bulletClass: "swiper-pagination-bullet", // Classe para as bolinhas
-        bulletActiveClass: "swiper-pagination-bullet-active", // Classe para a bolinha ativa
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
-      slidesPerView: 3, // Exibindo um slide por vez
-      slidesPerGroup: 3,
-      spaceBetween: 20,
-    });
+      pagination: {
+        type: 'bullets',
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 3,
+      spaceBetween: 50,
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50
+        },
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        }
+      }
+    }
+
+    );
+
   </script>
   <script>
     function toggleMenu() {
