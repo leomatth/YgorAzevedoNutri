@@ -3,18 +3,18 @@
   margin-top: -10rem;
 }
 
-.first-text h2 {
+.first-text h3 {
   position: absolute;
-  top: 5rem;
-  left: 60rem;
+  top: 5%;
+  left:60%;
   text-align: start;
   width: 31.25rem;
 }
 
 .first-section a {
   position: absolute;
-  right: 15.5rem;
-  top: 37rem;
+  right: 17.5%;
+  top: 60%;
 }
 
 .detail {

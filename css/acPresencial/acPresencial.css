@@ -142,8 +142,8 @@ img[src$=".png"] {
   align-items: center;
   height: 25rem;
   width: 35rem;
-  margin-left: 2rem;
-  margin-top: 3rem;
+  margin-left: 1.5%;
+  
 }
 
 .sup-wpp-box img {
@@ -158,8 +158,7 @@ img[src$=".png"] {
 .sup-img {
   width: auto;
   height: 25rem;
-  margin-left: 3rem;
-  margin-top: 3rem;
+  margin-left: 5%;
 }
 
 .sup-wpp-main {
@@ -169,7 +168,6 @@ img[src$=".png"] {
 
 .sup-wpp-main .vazio-enfeite {
   height: 25rem;
-  margin-top: 3rem;
 }
 
 .sup-wpp {

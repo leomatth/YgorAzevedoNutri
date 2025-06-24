@@ -2,7 +2,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 150vh;
+  height: 160vh;
   background-color: #f0f0f0;
   margin-top: 0;
 }
@@ -48,13 +48,12 @@
 }
 
 .feedback-fixos {
-  margin-top: 3%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2%;
   max-width: 100%;
+  max-height: fit-content;
   justify-content: center;
-  padding-bottom: 1%;
 }
 
 .feedback-fixos .feedback-box {
