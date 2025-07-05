@@ -38,9 +38,13 @@
   width: 100%;
 }
 
+
 /* Tablets (até 1024px) */
-@media (max-width: 1024px) {  
-  /* Estilos para tablets */
+@media (max-width: 1024px) {
+  .first-text h3 {
+    width: 95%;
+    max-width: 400px;
+  }
 }
 
 /* Tablets pequenos e celulares grandes (até 991px) */
@@ -49,18 +53,32 @@
 }
 
 /* Celulares médios (até 768px) */
-@media (max-width: 768px) {  
-  /* Estilos para celulares médios */
+@media (max-width: 768px) {
+  .first-text h3 {
+    width: 100%;
+    max-width: 350px;
+    font-size: 1.5rem;
+  }
 }
 
 /* Celulares pequenos (até 600px) */
-@media (max-width: 600px) {  
-  /* Estilos para celulares pequenos */
+@media (max-width: 600px) {
+  .first-text h3 {
+    font-size: 1.2rem;
+    max-width: 300px;
+  }
+  
+  .first-section a {
+    top: 70%;
+  }
 }
 
 /* Celulares muito pequenos (até 480px) */
-@media (max-width: 480px) {  
-  /* Estilos para celulares muito pequenos */
+@media (max-width: 480px) {
+  .first-text h3 {
+    font-size: 1rem;
+    max-width: 250px;
+  }
 }
 
 /* Celulares extra pequenos (até 375px) */

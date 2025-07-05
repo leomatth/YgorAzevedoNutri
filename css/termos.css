@@ -1,0 +1,48 @@
+.termos {
+  padding: 40px 10vw;
+  max-width: 900px;
+  margin: 2% auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.termos h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.termos p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+@media (max-width: 800px) {
+  .termos {
+    padding: 32px 4vw;
+    font-size: 1rem;
+  }
+  .termos h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .termos {
+    padding: 16px 2vw;
+    font-size: 0.95rem;
+  }
+  .termos h2 {
+    font-size: 1.1rem;
+  }
+} 

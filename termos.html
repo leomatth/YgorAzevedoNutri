@@ -162,14 +162,10 @@
       document.body.append(typebotInitScript);</script>
   <script>
     function toggleMenu() {
-        const menu = document.querySelector(".header-menu");
-        if (menu.style.display === "flex") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "flex";
-        }
+      const menu = document.querySelector(".header-menu");
+      menu.classList.toggle("open"); // Alterna a classe para abrir/fechar o menu
     }
-    </script>
+  </script>
 
 </body>
 

@@ -1,135 +1,177 @@
-  .plano-1 img {
-    display: block;
-    width: 100%;
-    height: 80vh;
-    object-fit: cover; /* ou object-fit: contain, dependendo do efeito desejado */
-    position: relative;
-  }
-  
-  .plano-1 h2 {
-    top: 225%;
-    z-index: 1;
-    left: 17%;
-  }
+.plano-1 img {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover; /* ou object-fit: contain, dependendo do efeito desejado */
+  position: relative;
+}
 
-  .plano-1 div {
-    top: 250%;
-  }
+.plano-1 h2 {
+  top: 225%;
+  z-index: 1;
+  left: 17%;
+}
 
-  .plano-1 p {
-    margin-left: 15rem;
-    margin-right: 10rem;
-    line-height: 2rem;
-    text-shadow: 0px 0px 8px rgba(114, 8, 8, 0.8);
+.plano-1 div {
+  top: 250%;
+}
+
+.plano-1 p {
+  margin-left: 15rem;
+  margin-right: 10rem;
+  line-height: 2rem;
+  text-shadow: 0px 0px 8px rgba(114, 8, 8, 0.8);
 }
 
 .av-fisica {
-    grid-template-columns: 1fr 5px 1fr;
-    margin-bottom: 3rem;
-    gap: 1rem;
+  grid-template-columns: 1fr 5px 1fr;
+  margin-bottom: 3rem;
+  gap: 1rem;
 }
 
 .av-fisica img {
-    border-radius: 15px;
-    
+  border-radius: 15px;
+  
 }
 
 .vazio-enfeite {
-    background-color: var(--cor-p1);
-    border-radius: 15px;
+  background-color: var(--cor-p1);
+  border-radius: 15px;
 }
 
 .av-fisica-box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    width: 600px;
-    height: auto;
-    line-height: 1.6rem;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(81, 2, 2, 0.264);
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 600px;
+  height: auto;
+  line-height: 1.6rem;
+}
+
+.sup-wpp-box {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(81, 2, 2, 0.393);
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 35rem;
+  margin-left: 7rem;
+}
+
+.sup-wpp-box img{
+  display: inline-block;
+  width: 35rem;
+  max-width: max-content;
+  opacity: 55%;
+}
+
+.sup-img {
+  width: auto;
+  height: 25rem;
+}
+
+.sup-wpp-main {
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  height: 25rem;
+}
+
+.sup-wpp {
+  background: var(--cor-12);
+  height: 110vh;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 5rem;
+}
+
+.app-box {
+  min-width: 300px; /* Garante que o texto não fique muito estreito em telas menores */
+  width: 500px;
+  background-color: var(--cor-0);
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(81, 2, 2, 0.384);
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 5rem;
+}
+
+.ac-app {
+  width: 100vw;
+  height: 90vh;
+}
+
+.lista-app-box li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 2rem;
+}
+
+.lista-app-box li img {
+  margin-right: 20px; /* Espaço entre o ícone e o texto */
+}
+
+  /* Responsividade */
+@media (max-width: 1024px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+  }
+  
+  .sup-wpp-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .plano-1 p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .av-fisica-box {
+    max-width: 100%;
   }
   
   .sup-wpp-box {
-    background-color: #f0f0f0;
-    padding: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.393);
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
-    width: 35rem;
-    margin-left: 7rem;
-  }
-
-  .sup-wpp-box img{
-    display: inline-block;
-    width: 35rem;
-    max-width: max-content;
-    opacity: 55%;
-  }
-
-  .sup-img {
-    width: auto;
-    height: 25rem;
-  }
-
-  .sup-wpp-main {
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    height: 25rem;
-  }
-
-  .sup-wpp {
-    background: var(--cor-12);
-    height: 110vh;
-  }
-
-  .app-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 5rem;
+    max-width: 100%;
   }
   
   .app-box {
-    min-width: 300px; /* Garante que o texto não fique muito estreito em telas menores */
-    width: 500px;
-    background-color: var(--cor-0);
-    padding: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(81, 2, 2, 0.384);
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin: 5rem;
+    max-width: 100%;
+    margin: 1rem;
   }
+}
 
-  .ac-app {
-    width: 100vw;
-    height: 90vh;
-  }
-
-  .lista-app-box li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-left: 2rem;
+@media (max-width: 600px) {
+  .app-container {
+    margin: 0 0.5rem;
   }
   
-  .lista-app-box li img {
-    margin-right: 20px; /* Espaço entre o ícone e o texto */
+  .app-box {
+    margin: 0.5rem;
   }
-  
-  /* Tablets (até 1024px) */
+}
+
+/* Tablets (até 1024px) */
 @media (max-width: 1024px) {  
   /* Estilos para tablets */
 }
